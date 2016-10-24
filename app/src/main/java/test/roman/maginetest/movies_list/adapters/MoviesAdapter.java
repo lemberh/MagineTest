@@ -55,6 +55,10 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
         return videos.size();
     }
 
+    /**
+     * Set new data source
+     * @param videos
+     */
     public void setVideos(List<Video> videos) {
         this.videos = videos;
         handler.post(new Runnable() {
@@ -78,6 +82,9 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
             image = (ImageView) itemView.findViewById(R.id.image);
         }
 
+        /**
+         * @param model this model is used to populate list row with data
+         */
         void update(Video model){
             title.setText(model.getTitle());
             studio.setText(model.getStudio());

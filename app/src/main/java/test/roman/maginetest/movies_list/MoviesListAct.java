@@ -19,6 +19,9 @@ import test.roman.maginetest.movies_list.loaders.MoviesListLoader;
 import test.roman.maginetest.movies_list.models.Category;
 import test.roman.maginetest.movies_list.models.RootObject;
 
+/**
+ * Launcher activity which displays list of videos
+ */
 public class MoviesListAct extends AppCompatActivity {
 
     private Button mTryAgain;

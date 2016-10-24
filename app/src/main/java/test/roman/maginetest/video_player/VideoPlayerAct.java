@@ -10,9 +10,12 @@ import android.widget.VideoView;
 
 import test.roman.maginetest.R;
 
+/**
+ * Plays video which URL was passed through {@link android.content.Intent} with Key {@link VideoPlayerAct#VIDEO_URL}
+ */
 public class VideoPlayerAct extends AppCompatActivity {
 
-    public static final String VIDEO_URL = "CODE";
+    public static final String VIDEO_URL = "VIDEO_URL";
     private VideoView videoView;
     private MediaController mediaController;
     private String videoUrl;

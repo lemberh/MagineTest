@@ -1,6 +1,7 @@
 package test.roman.maginetest.movies_list.loaders;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.support.v4.content.AsyncTaskLoader;
 
 import com.google.gson.Gson;
@@ -45,6 +46,7 @@ public class MoviesListLoader extends AsyncTaskLoader<RootObject> {
         }
     }
 
+    @NonNull
     private String loadJson(String url) throws IOException {
         OkHttpClient client = new OkHttpClient();
 
